@@ -3,7 +3,7 @@ const messages = [
   'I am a Frontend Web developer 👩‍💻',
   'Pursuing Fullstack Web Development course in Acciojob 📝',
   'My Technical Skills: HTML,CSS, JavaScript,Java 💻',
-  'I was an assistant teacher in High School 👩‍🏫',
+  'I was an Assistant Teacher in High School 👩‍🏫',
   'Hobbies: Painting, Book reading, Photography, Videography  🎨 📸 📚',
   'Passion: Coding, Teaching 💻 👩‍🏫'
 ];
@@ -11,7 +11,7 @@ const messages = [
 
 
 const images = [
-  'https://images.gr-assets.com/users/1578802777p6/48940197.jpg',
+  'new img1.jpeg',
   'https://user-images.githubusercontent.com/59734313/157189039-c09b3e38-9f42-42c0-ab54-14f1574190a7.gif',
   'https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif',
   'https://media.tenor.com/sfp8nf9UrZcAAAAM/uwu-cat.gif',
@@ -40,13 +40,13 @@ function generateMessage() {
 }
 
 
-// Get references to the DOM elements
+
 const heading = document.getElementById('heading');
 const message = document.getElementById('message');
 const cursor = document.getElementById('cursor');
 const button = document.getElementById('button');
 
-// Define a function to update the message when the button is clicked
+
 function handleClick() {
   let msg = generateMessage();
   message.textContent = '';
@@ -86,7 +86,7 @@ function handleClick() {
 }
 
 
-// Attach the event listener to the button
+
 button.addEventListener('click', handleClick);
 
 
