@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(to right, rgb(255, 153, 0), rgb(210, 154, 99), white, rgb(164, 118, 87), rgb(255, 128, 0))
+}
+
+#heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
+    color: rgb(158, 37, 15);
+    text-shadow: 2px 3px 5px;
+    margin-bottom: 5rem;
+}
+
+#message {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: fadeIn 0.9s ease-out 1s forwards;
+    color: #f4ebeb;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+#button {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #7a290c;
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: fadeIn 0.5s ease-out 1.5s forwards;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 3px black;
+}
+
+#button:hover {
+    background-color: #a31600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
