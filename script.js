@@ -59,7 +59,9 @@ function handleClick() {
       cursor.style.display = 'none';
       button.disabled = false;
       button.textContent = 'Click Again';
-
+      document.querySelectorAll('.image').forEach((img) => {
+        img.remove();
+      });
 
       if (i === messages.length) {
         document.querySelectorAll('.image').forEach((img) => {
@@ -73,6 +75,7 @@ function handleClick() {
     button.textContent = 'Wait...';
     button.disabled = true;
     i++;
+    return;
   }, 100);
 
   if (i === messages.length) {
